@@ -31,11 +31,11 @@ or
 
 >yarn add react-icons
 
-## useState
+## State Hook
 When we want page content to change using functions the page will need to rerendered that content. 
 For this it will need to be aware of the 'state'. For this we use the 'useState' import.
 
-## useEffect
+## Effect Hook
 We can create 'side' effects everytime a page is rerendered. For this we use the 'useEffect' import. 
 With an ampty array as second argument the useEffect will only run on the initial render. We can use this when fetching data. 
 When we pass a value it will run again when this value changes. We can return a 'cleanup' function to prevent memory leaks.  
@@ -84,5 +84,18 @@ We will need to bind our inputs to state values:
 	<input type='text' id='name' name='name' value={name} 
 	onChange={(e) => setName(e.target.value}/>
 
+## Reference Hook
+Unlike useEffect this hook does not trigger re-render. It preserves value and is mainly used to target DOM nodes/elements (for example inputs).
 
-
+	function TextInputWithFocusButton() {
+		const inputEl = useRef(null)
+		const onButtonClick = () => {
+			inputEl.current.focus()
+		}
+		return (
+			<>
+			<input ref={inputEl} type="text" />
+			<button onClick={onButtonClick}>Focus the input</button>
+			</>
+		)
+	}
