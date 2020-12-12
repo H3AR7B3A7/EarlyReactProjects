@@ -1,6 +1,6 @@
 # React
-[React](https://reactjs.org/) application development.  
-[More Documentation](https://www.typescriptlang.org/docs/handbook/react.html)
+[Official React Website](https://reactjs.org/)  
+[More Docs on Typescript](https://www.typescriptlang.org/docs/handbook/react.html)
 
 ### Create an application
 In the folder where we want to create our application:  
