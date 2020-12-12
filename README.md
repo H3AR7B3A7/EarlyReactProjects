@@ -5,7 +5,10 @@
 ### Create an application
 In the folder where we want to create our application:  
 >npx create-react-app some_name		|	yarn create react-app some_name  
-Flag to create including typescript: --template typescript  
+
+Flag to create including typescript: 
+>--template typescript  
+
 Typescript is a typed superset of JavaScript. Typing is useful for maintaining bigger projects over a long time.  
   
 To build a production application:  
@@ -14,13 +17,18 @@ To build a production application:
 ### Other libraries
 To add [Typescript](https://create-react-app.dev/docs/adding-typescript/) to the project:  
 >npm install --save typescript @types/node @types/react @types/react-dom @types/jest  
+
 or  
+
 >yarn add typescript @types/node @types/react @types/react-dom @types/jest  
+
 And then rename the file extensions from *.js to *.tsx
 
 [React Icons](https://www.npmjs.com/package/react-icons):  
 >npm install react-icons --save  
+
 or  
+
 >yarn add react-icons
 
 ## useState
