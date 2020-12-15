@@ -24,16 +24,23 @@ or
 
 And then rename the file extensions from *.js to *.tsx
 
-[React Icons](https://www.npmjs.com/package/react-icons):  
+To add[React Icons](https://www.npmjs.com/package/react-icons):  
 >npm install react-icons --save  
 
 or  
 
 >yarn add react-icons
 
+To add [values.js](https://github.com/noeldelgado/Values.js/):  
+>npm install values.js --save
+
 ## State Hook
 When we want page content to change using functions the page will need to rerendered that content. 
 For this it will need to be aware of the 'state'. For this we use the 'useState' import.
+
+	const [count, setCount] = useState(initialCount);
+
+We can then use setCount() to change the value and re-render.
 
 ## Effect Hook
 We can create 'side' effects everytime a page is rerendered. For this we use the 'useEffect' import. 
@@ -99,3 +106,5 @@ Unlike useEffect this hook does not trigger re-render. It preserves value and is
 			</>
 		)
 	}
+
+## Reducer Hook
